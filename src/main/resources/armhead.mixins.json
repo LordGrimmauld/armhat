@@ -2,14 +2,18 @@
   "required": true,
   "package": "mod.grimmauld.armhead.mixin",
   "compatibilityLevel": "JAVA_8",
-  "refmap": "discordchat.refmap.json",
+  "refmap": "armhead.refmap.json",
   "client": [
+    "DisableContraptionLighterMixin"
   ],
   "injectors": {
     "defaultRequire": 1
   },
   "minVersion": "0.8",
   "mixins": [
-    "ArmIsEquipabbleMixin"
+    "ArmIsEquipabbleMixin",
+    "ContraptionsDontCalculateWaterMixin",
+    ,
+    "NbtSizeTrackerDoubler"
   ]
 }
